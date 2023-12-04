@@ -61,7 +61,6 @@ void imprimirMenuUrna(){
             case 2:
                 printf("Digite o número da urna: ");
                 scanf("%d", &numeroUrna);
-                alterarUrna(numeroUrna, urnas);
                 break;
         }
     } while(opcao != 3);

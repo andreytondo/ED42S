@@ -27,7 +27,7 @@ Candidato *cadastrarCandidato(Candidato *candidatos){
     printf("Digite o cargo do candidato: ");
     gets(candidato->cargo);
     candidato->dataNascimento = (Data*) malloc(sizeof(Data));
-    printf("Digite a data de nascimento do candidato: ");
+    printf("Digite a data de nascimento do candidato: (formato dd/MM/yyyy)");
     scanf("%d/%d/%d", &candidato->dataNascimento->dia, &candidato->dataNascimento->mes, &candidato->dataNascimento->ano);
     candidato->prox = candidatos;
     return candidato;
